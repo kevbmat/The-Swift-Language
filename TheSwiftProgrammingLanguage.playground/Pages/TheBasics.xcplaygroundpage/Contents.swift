@@ -86,6 +86,38 @@ print("Am I Human? \(isHuman)");
 let LarrytheLion = (lionName: "Larry", species: "Lion");
 
 // optionals
+let stringNum = "8";
+let convertedNum = Int(stringNum); // type Int? or optional Int (either Int or nothing at all)
 
+var nilNumber: Int? = 234; // optional Int
+nilNumber = nil; // now has no value
+var initializedStringToNil: String?; // automatically set to nil
 
+// if statements and forced unwrapping
+nilNumber = 567;
+if (nilNumber != nil) {
+    print("nilNumber has a value now");
+}
+print("nilNumber has a value of \(nilNumber!)"); // forced unwrapping
+
+// optional binding
+let possibleNumber = "789";
+if let actualNumber = Int(possibleNumber) {
+    print("\"\(possibleNumber)\" has a value of \(actualNumber)");
+} else {
+    print("\(possibleNumber) doesn't have an integer value");
+}
+
+if let firstVal = Int("5"), let secondVal = Int("40"), firstVal < secondVal {
+    print("\(firstVal) is less than \(secondVal)");
+}
+
+// implicitly unwrapped optionals (when assumed the variable is not nil)
+let possibleString: String? = "Optional String not equal to nil";
+let forcedString: String = possibleString!;
+
+let assumedString: String! = "Implicitly unwrapped optional";
+let implicitString: String = assumedString;
+
+// error handling
 
