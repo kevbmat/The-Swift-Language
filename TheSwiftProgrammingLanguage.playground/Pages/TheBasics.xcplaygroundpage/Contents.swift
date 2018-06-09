@@ -120,4 +120,27 @@ let assumedString: String! = "Implicitly unwrapped optional";
 let implicitString: String = assumedString;
 
 // error handling
+func canThrowError() throws {
+    print("Will I throw an error?");
+}
 
+do {
+    try canThrowError(); // no error
+} catch {
+    // error
+}
+
+// debugging with assertions
+let numberOfSnacks = 4;
+assert(numberOfSnacks >= 0, "You can't have a negative number of snacks");
+
+let numberOfGlasses = 2;
+if numberOfGlasses > 0 {
+    print("Possible value");
+} else {
+    assertionFailure("You can't have a negative number of glasses");
+}
+
+// enforcing preconditions
+let index: Int = 3;
+precondition(index > 0, "index has to be greater than 0");
