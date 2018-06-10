@@ -79,7 +79,51 @@ OR
  colorToUse = userColor != nil ? userColor! : defaultColor;
 */
 
-// range operator
+// range operator (closed)
+var index: Int;
+for index in 1...6 {
+    print("\(index) times 3 equals \(index * 3)");
+}
 
+// range operator (half-open)
+let names = ["Adam", "Blake", "Chase", "Danny"];
+let nameCount = names.count;
+for index in 0..<nameCount {  // using the same index initialized before
+    print("User \(index + 1) is \(names[index])");
+}
 
+// one-sided ranges
+var userName: String;
+for userName in names[2...] { // always note forloops in swift don't have paranthesis
+    print(userName);
+}
+print("\n");
+for userName in names[...2] {
+    print(userName);
+}
 
+let range = 2...4;
+range.contains(3);
+range.contains(5);
+range.contains(2);
+
+// logical operators (not)
+let yes = true;
+let no = !yes;
+
+// logical operators (and)
+if yes && no {
+    print("not okay");
+} else {
+    print("okay (and)");
+}
+
+// logical operators (or)
+if yes || no {
+    print("okay (or)");
+} else {
+    print("not okay");
+}
+
+// order of operators precedence from most important to least important
+// ! , && , ||
