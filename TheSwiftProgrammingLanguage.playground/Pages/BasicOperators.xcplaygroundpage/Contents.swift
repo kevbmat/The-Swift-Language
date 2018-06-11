@@ -80,7 +80,6 @@ OR
 */
 
 // range operator (closed)
-var index: Int;
 for index in 1...6 {
     print("\(index) times 3 equals \(index * 3)");
 }
@@ -88,7 +87,7 @@ for index in 1...6 {
 // range operator (half-open)
 let names = ["Adam", "Blake", "Chase", "Danny"];
 let nameCount = names.count;
-for index in 0..<nameCount {  // using the same index initialized before
+for index in 0..<nameCount {
     print("User \(index + 1) is \(names[index])");
 }
 
