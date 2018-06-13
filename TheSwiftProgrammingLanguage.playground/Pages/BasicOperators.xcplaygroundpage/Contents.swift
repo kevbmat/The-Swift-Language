@@ -92,7 +92,6 @@ for index in 0..<nameCount {
 }
 
 // one-sided ranges
-var userName: String;
 for userName in names[2...] { // always note forloops in swift don't have paranthesis
     print(userName);
 }
