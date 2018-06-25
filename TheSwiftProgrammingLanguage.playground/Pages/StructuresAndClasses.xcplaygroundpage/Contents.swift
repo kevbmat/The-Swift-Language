@@ -3,4 +3,4 @@
 
 import Foundation
 
-// ENUMARATIONS
+// STRUCTURES AND CLASSES
