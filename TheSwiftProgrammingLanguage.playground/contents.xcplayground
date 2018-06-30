@@ -8,5 +8,9 @@
         <page name='ControlFlow'/>
         <page name='Functions'/>
         <page name='Closures'/>
+        <page name='Enumerations'/>
+        <page name='Properties'/>
+        <page name='StructuresAndClasses'/>
+        <page name='Methods'/>
     </pages>
 </playground>
